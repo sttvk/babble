@@ -1,13 +1,13 @@
 import React from "react";
-import "./SignUp.css";
+import "./Register.css";
 import addUser from "../../images/add-user.png";
 
 function SignUp() {
   return (
-    <div className="SignUp">
-      <div className="form-container">
-        <span className="logo">Babble</span>
-        <form>
+    <div className="sign-up">
+      <div className="register-form-container">
+        <span className="register-logo">Babble</span>
+        <form className="register-form">
           <input required type="text" placeholder="Name" />
           <input required type="email" placeholder="Email" />
           <input required type="password" placeholder="Password" />

@@ -1,0 +1,42 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #62165c;
+  height: 80px;
+  padding: 10px 20px;
+  top: 50%;
+  color: white;
+}
+
+.nav-bar-logo {
+  border: 1px solid black;
+  font-weight: bold;
+  color: #ffbf78;
+  font-size: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-bar-user {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-bar-user > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-bar-user > button {
+  color: white;
+  background-color: #ff7cf3;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  padding: 0 5px;
+}

@@ -1,12 +1,12 @@
 import React from "react";
-import "./LogIn.css";
+import "./Register.css";
 
 function LogIn() {
   return (
-    <div className="LogIn">
-      <div className="form-container">
-        <span className="logo">Babble</span>
-        <form>
+    <div className="log-in">
+      <div className="register-form-container">
+        <span className="register-logo">Babble</span>
+        <form className="register-form">
           <input required type="email" placeholder="Email" />
           <input required type="password" placeholder="Password" />
           <button>Log in</button>

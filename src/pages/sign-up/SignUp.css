@@ -1,15 +1,15 @@
-.Register {
+.SignUp {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #a7bcff;
+  background-color: #ffffa4;
 }
 
 .form-container {
   background-color: white;
   padding: 20px 60px;
-  border-radius: 10px;
+  border-radius: 40px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -17,15 +17,9 @@
 }
 
 .logo {
-  color: #5d5b8d;
+  color: #ffbf78;
   font-weight: bold;
-  font-size: 36px;
-}
-
-.title {
-  color: #5d5b8d;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 60px;
 }
 
 form {
@@ -38,17 +32,15 @@ input {
   padding: 15px;
   border: none;
   width: 250px;
-  border-bottom: 1px solid #a7bcff;
-}
-
-::placeholder {
-  color: rgb(175, 175, 175, 175);
+  font-size: 24px;
+  border-bottom: 1px solid #ff7cf3;
 }
 
 button {
-  background-color: #7b96ec;
+  background-color: #ff7cf3;
   color: white;
   padding: 10px;
+  font-size: 24px;
   font-weight: bold;
   border: none;
   cursor: pointer;
@@ -58,8 +50,8 @@ label {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #8da4f1;
-  font-size: 12px;
+  color: #f8c6ed;
+  font-size: 24px;
   cursor: pointer;
 }
 
@@ -69,7 +61,18 @@ img {
 }
 
 p {
-  color: #5d5b8d;
-  font-size: 12px;
+  color: #f8c6ed;
+  font-size: 24px;
   margin-top: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(175, 175, 175, 175);
 }

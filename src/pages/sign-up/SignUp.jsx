@@ -1,13 +1,12 @@
 import React from "react";
-import "./Register.css";
+import "./SignUp.css";
 import addUser from "../../images/add-user.png";
 
-function Register() {
+function SignUp() {
   return (
-    <div className="Register">
+    <div className="SignUp">
       <div className="form-container">
         <span className="logo">Babble</span>
-        <span className="title">Register</span>
         <form>
           <input required type="text" placeholder="Name" />
           <input required type="email" placeholder="Email" />
@@ -19,10 +18,10 @@ function Register() {
           </label>
           <button>Sign up</button>
         </form>
-        <p>Have an account? Login</p>
+        <p>Already have an account? Log in</p>
       </div>
     </div>
   );
 }
 
-export default Register;
+export default SignUp;

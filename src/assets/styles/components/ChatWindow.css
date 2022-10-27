@@ -1,0 +1,23 @@
+.chat-window {
+  flex: 2;
+}
+
+.chat-window-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  height: 80px;
+  padding: 10px 20px;
+  background-color: #6c4165;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.chat-window-container > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}

@@ -1,7 +1,7 @@
-import "./App.css";
-import LogIn from "./pages/register/LogIn";
-import SignUp from "./pages/register/SignUp";
-import Home from "./pages/home/Home";
+import "./assets/styles/App.css";
+import LogIn from "./pages/LogIn";
+import SignUp from "./pages/SignUp";
+import Home from "./pages/Home";
 
 function App() {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import "./SideBar.css";
-import NavBar from "../nav-bar/NavBar";
-import SearchBox from "../search-box/SearchBox";
-import Chats from "../chats/Chats";
+import "../assets/styles/components/SideBar.css";
+import NavBar from "./NavBar";
+import SearchBox from "./SearchBox";
+import Chats from "./Chats";
 
 function SideBar() {
   return (

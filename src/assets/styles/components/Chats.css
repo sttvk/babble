@@ -8,8 +8,8 @@
 }
 
 .chat-container > img {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   object-fit: cover;
 }

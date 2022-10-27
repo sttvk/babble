@@ -1,7 +1,7 @@
 import React from "react";
-import "./Home.css";
-import SideBar from "../../components/side-bar/SideBar";
-import Chat from "../../components/chat-window/ChatWindow";
+import "../assets/styles/pages/Home.css";
+import SideBar from "../components/SideBar";
+import Chat from "../components/ChatWindow";
 
 function Home() {
   return (

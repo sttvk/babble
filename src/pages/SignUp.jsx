@@ -1,13 +1,13 @@
 import React from "react";
-import "./Register.css";
-import addUser from "../../images/add-user.png";
+import "../assets/styles/pages/AuthCard.css";
+import addUser from "../assets/images/add-user.png";
 
 function SignUp() {
   return (
     <div className="sign-up">
-      <div className="register-form-container">
-        <span className="register-logo">Babble</span>
-        <form className="register-form">
+      <div className="AuthCard-form-container">
+        <span className="AuthCard-logo">Babble</span>
+        <form className="AuthCard-form">
           <input required type="text" placeholder="Name" />
           <input required type="email" placeholder="Email" />
           <input required type="password" placeholder="Password" />

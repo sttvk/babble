@@ -1,3 +1,5 @@
+@import url(./Constants.css);
+
 * {
   box-sizing: border-box;
   max-height: 100vh;

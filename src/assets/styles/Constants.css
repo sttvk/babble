@@ -1,0 +1,22 @@
+:root {
+  --height-page: 100vh;
+  --height-card: 60%;
+
+  --color-bg: #ffffa4;
+  --color-logo: #ffbf78;
+  --color-white: white;
+  --color-accent-primary: #ff7cf3;
+  --color-accent-secondary: #f8c6ed;
+
+  --fs-logo-primary: 80px;
+
+  --margin-0: 0;
+  --padding-0: 0;
+  --padding-secondary: 10px;
+  --padding-tb: 20px;
+  --padding-lr: 60px;
+
+  --br-40: 40px;
+
+  --gap: 10px;
+}

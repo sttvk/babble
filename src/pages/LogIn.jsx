@@ -1,12 +1,12 @@
 import React from "react";
-import "./Register.css";
+import "../assets/styles/pages/AuthCard.css";
 
 function LogIn() {
   return (
     <div className="log-in">
-      <div className="register-form-container">
-        <span className="register-logo">Babble</span>
-        <form className="register-form">
+      <div className="AuthCard-form-container">
+        <span className="AuthCard-logo">Babble</span>
+        <form className="AuthCard-form">
           <input required type="email" placeholder="Email" />
           <input required type="password" placeholder="Password" />
           <button>Log in</button>

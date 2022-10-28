@@ -1,19 +1,26 @@
 @import url(../Constants.css);
 
 .search-box {
+  display: flex;
+  align-items: center;
+  height: var(--ht-text);
   margin: var(--m-1) var(--m-2);
-  background-color: var(--color-3);
   border-radius: var(--br);
+  background-color: var(--color-3);
 }
 
 .search-box-container {
-  padding: var(--p-1) var(--p-2);
+  width: var(--wt-100-per);
+  padding: var(--p-1) 0;
 }
 
 .search-box-container > input {
-  width: 100%;
-  background-color: transparent;
+  height: var(--fs-1);
+  width: var(--wt-100-per);
+  padding: var(--p-1) var(--p-2);
   border: none;
-  color: white;
   font-size: var(--fs-1);
+  color: var(--color-white);
+  border-radius: var(--br);
+  background-color: transparent;
 }

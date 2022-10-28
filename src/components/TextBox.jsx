@@ -5,8 +5,10 @@ import AddFile from "../assets/images/add-file.png";
 function TextBox() {
   return (
     <div className="text-box">
-      <input type="text" placeholder="Type something..."></input>
-      <div className="text-box-container">
+      <div className="text-box-input-container">
+        <input type="text" placeholder="Type something..."></input>
+      </div>
+      <div className="text-box-btn-container">
         <label htmlFor="file">
           <img src={AddFile} alt="Add" />
         </label>

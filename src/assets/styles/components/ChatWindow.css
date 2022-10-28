@@ -8,18 +8,18 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  gap: 10px;
-  height: 80px;
-  padding: 10px 20px;
-  background-color: var(--color-4);
-  color: white;
-  font-size: 24px;
+  height: var(--ht-menu);
+  padding: var(--p-1) var(--p-2);
+  font-size: var(--fs-1);
   font-weight: bold;
+  gap: var(--gap);
+  color: var(--color-white);
+  background-color: var(--color-4);
 }
 
 .chat-window-container > img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
+  height: var(--ht-img-2);
+  width: var(--ht-img-2);
+  border-radius: var(--br);
   object-fit: cover;
 }

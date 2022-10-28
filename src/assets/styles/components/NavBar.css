@@ -20,21 +20,26 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  font-size: var(--fs-1);
+  height: var(--ht-text);
   gap: var(--gap);
 }
 
 .nav-bar-user > img {
-  height: var(--ht-img-1);
-  width: var(--ht-img-1);
+  height: var(--ht-img-2);
+  width: var(--ht-img-2);
   border-radius: var(--br);
   object-fit: cover;
 }
 
+.nav-bar-user > span {
+  font-size: var(--fs-1);
+}
+
 .nav-bar-user > button {
+  height: var(--ht-100-per);
+  width: var(--wt-btn);
   border: none;
   cursor: pointer;
-  width: var(--wt-btn);
   font-size: var(--fs-1);
   border-radius: var(--br);
   color: var(--color-white);

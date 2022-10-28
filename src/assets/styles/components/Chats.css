@@ -10,8 +10,8 @@
 }
 
 .chat-container > img {
-  height: var(--ht-img-2);
-  width: var(--ht-img-2);
+  height: var(--ht-img-1);
+  width: var(--ht-img-1);
   border-radius: var(--br);
   object-fit: cover;
 }

@@ -1,18 +1,4 @@
 :root {
-  --ht-menu: 80px;
-  --ht-img-1: 40px;
-  --ht-img-2: 60px;
-  --ht-messages: calc(100% - 160px);
-  --ht-text: 40px;
-
-  --wt-card: 400px;
-  --wt-img-1: 40px;
-  --wt-img-2: 60px;
-  --wt-btn: 80px;
-  --wt-text: 80%;
-  --wt-text-icons: 20%;
-  --wt-search: 100%;
-
   --color-bg: #f8bcbc;
   --color-1: #f38ba2;
   --color-2: #a36180;
@@ -21,6 +7,21 @@
   --color-5: #1a141e;
   --color-logo: #ffbf78;
   --color-white: white;
+
+  --ht-vh: 100vh;
+  --ht-100-per: 100%;
+  --ht-menu: 80px;
+  --ht-text: 40px;
+  --ht-img-1: 60px;
+  --ht-img-2: 40px;
+  --ht-messages: calc(100% - 160px);
+
+  --wt-100-per: 100%;
+  --wt-card: 400px;
+  --wt-form-per: 80%;
+  --wt-img-1: 60px;
+  --wt-img-2: 40px;
+  --wt-btn: 80px;
 
   --fs-logo-1: 80px;
   --fs-logo-2: 40px;

@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: var(--ht-vh);
   background-color: var(--color-bg);
 }
 
@@ -30,13 +30,13 @@
 .AuthCard-form {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: var(--wt-form-per);
   gap: var(--gap);
 }
 
 .AuthCard-form > input {
-  padding: var(--p-1);
   border: none;
+  padding: var(--p-1);
   font-size: var(--fs-1);
   border-bottom: 1px solid var(--color-1);
 }
@@ -44,31 +44,30 @@
 .AuthCard-form > label {
   display: flex;
   align-items: center;
-  padding: 10px;
-  gap: 10px;
+  padding: var(--p-1);
+  gap: var(--gap);
   color: var(--color-1);
   font-size: var(--fs-1);
   cursor: pointer;
 }
 
 .AuthCard-form > label > img {
-  height: 40px;
-  width: 40px;
+  height: var(--ht-img-2);
+  width: var(--ht-img-2);
 }
 
 .AuthCard-form > button {
-  background-color: var(--color-3);
   color: white;
-  padding: 10px;
+  padding: var(--p-1);
   font-size: var(--fs-1);
   font-weight: bold;
   border: none;
   cursor: pointer;
   border-radius: var(--br);
+  background-color: var(--color-3);
 }
 
 .AuthCard-form-container > p {
   color: var(--color-1);
   font-size: var(--fs-1);
 }
-

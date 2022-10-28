@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   height: var(--ht-text);
-  margin: var(--m-1) var(--m-2);
+  margin: var(--m-2);
   gap: var(--gap);
 }
 

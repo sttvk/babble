@@ -1,31 +1,33 @@
+@import url(../Constants.css);
+
 .chat-container {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  gap: 10px;
-  color: white;
+  padding: var(--p-1) var(--p-2);
+  gap: var(--gap);
+  color: var(--color-white);
   cursor: pointer;
 }
 
 .chat-container > img {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
+  height: var(--ht-img-2);
+  width: var(--ht-img-2);
+  border-radius: var(--br);
   object-fit: cover;
 }
 
 .chat-info > span {
-  font-size: 24px;
+  font-size: var(--fs-1);
   font-weight: bold;
 }
 
 .chat-info > p {
-  font-size: 18px;
+  font-size: var(--fs-2);
   line-height: 1;
   overflow: hidden;
-  color: rgb(175, 175, 175, 175);
+  color: var(--color-2);
 }
 
 .chats :hover {
-  background-color: blue;
+  background-color: var(--color-3);
 }

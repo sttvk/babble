@@ -1,54 +1,57 @@
+@import url(../Constants.css);
+
 .text-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
-  background-color: #fff;
-  border-radius: 40px;
-  padding: 1%;
-  margin: 20px;
+  height: var(--ht-text);
+  background-color: var(--color-bg);
+  margin: var(--m-2);
   border: 1px solid black;
+  gap: var(--gap);
 }
 
 .text-box > input {
+  height: 100%;
   width: 85%;
   border: none;
   outline: none;
-  color: rgb(73, 141, 163);
-  font-size: 24px;
+  color: var(--color-3);
+  font-size: var(fs-1);
+  border-radius: var(--br);
+  padding: var(--p-1) var(--p-2);
+  font-size: var(--fs-1);
   border: 1px solid black;
 }
 
-.send {
+.text-box-container {
   display: flex;
   align-items: center;
-  justify-content: right;
-  height: 40px;
-  width: 15%;
-  gap: 10px;
+  justify-content: center;
+  height: 100%;
+  width: var(--wt-text-icons);
+  gap: var(--gap);
   border: 1px solid black;
-  border-radius: 20px;
+  /* border-radius: var(--br); */
 }
 
-.send > label > img {
-  height: 30px;
-  width: 30px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  border-radius: 50px;
+.text-box-container > label > img {
+  height: var(--ht-img-1);
+  width: var(--wt-img-1);
+  margin: 10px;
+  border-radius: var(--br);
   cursor: pointer;
   border: 1px solid black;
 }
 
-.send > button {
-  height: 40px;
-  width: 80px;
-  font-size: 24px;
-  border-radius: 20px;
-  color: white;
-  background-color: #ff7cf3;
+.text-box-container > button {
+  width: var(--wt-btn);
+  font-size: var(--fs-1);
+  border-radius: var(--br);
+  color: var(--color-white);
+  background-color: var(--color-3);
   border: none;
   cursor: pointer;
   border: 1px solid black;
+  margin: 10px;
 }

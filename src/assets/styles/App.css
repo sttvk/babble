@@ -1,5 +1,3 @@
-@import url(./Constants.css);
-
 * {
   box-sizing: border-box;
   max-height: 100vh;
@@ -7,4 +5,15 @@
   padding: 0;
   overflow: auto;
   font-family: "Dongle", sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: lightgray;
 }

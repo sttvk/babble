@@ -1,18 +1,19 @@
+@import url(../Constants.css);
+
 .search-box {
-  border-bottom: 1px solid grey;
+  margin: var(--m-1) var(--m-2);
+  background-color: var(--color-3);
+  border-radius: var(--br);
 }
 
 .search-box-container {
-  padding: 10px 20px;
+  padding: var(--p-1) var(--p-2);
 }
 
 .search-box-container > input {
+  width: 100%;
   background-color: transparent;
   border: none;
   color: white;
-  font-size: 24px;
-}
-
-::placeholder {
-  color: rgb(175, 175, 175, 175);
+  font-size: var(--fs-1);
 }

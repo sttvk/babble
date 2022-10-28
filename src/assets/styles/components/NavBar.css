@@ -1,42 +1,42 @@
+@import url(../Constants.css);
+
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #62165c;
-  height: 80px;
-  padding: 10px 20px;
-  top: 50%;
-  color: white;
+  padding: var(--p-1) var(--p-2);
+  height: var(--ht-menu);
+  color: var(--color-white);
+  background-color: var(--color-4);
 }
 
 .nav-bar-logo {
-  border: 1px solid black;
   font-weight: bold;
-  color: #ffbf78;
-  font-size: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: var(--fs-logo-2);
+  color: var(--color-logo);
 }
 
 .nav-bar-user {
-  border: 1px solid black;
   display: flex;
+  justify-content: right;
   align-items: center;
-  gap: 15px;
+  font-size: var(--fs-1);
+  gap: var(--gap);
 }
 
 .nav-bar-user > img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
+  height: var(--ht-img-1);
+  width: var(--ht-img-1);
+  border-radius: var(--br);
   object-fit: cover;
 }
 
 .nav-bar-user > button {
-  color: white;
-  background-color: #ff7cf3;
-  font-size: 18px;
   border: none;
   cursor: pointer;
-  padding: 0 5px;
+  width: var(--wt-btn);
+  font-size: var(--fs-1);
+  border-radius: var(--br);
+  color: var(--color-white);
+  background-color: var(--color-5);
 }

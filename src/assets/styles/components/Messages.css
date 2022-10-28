@@ -1,5 +1,7 @@
+@import url(../Constants.css);
+
 .messages {
-  background-color: #ffffa4;
-  padding: 10px 20px;
-  height: calc(100% - 180px);
+  background-color: var(--color-bg);
+  padding: var(--p-1) var(--p-2);
+  height: var(--ht-messages);
 }

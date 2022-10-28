@@ -1,22 +1,42 @@
 :root {
-  --height-page: 100vh;
-  --height-card: 60%;
+  --ht-menu: 80px;
+  --ht-img-1: 40px;
+  --ht-img-2: 60px;
+  --ht-messages: calc(100% - 160px);
+  --ht-text: 40px;
 
-  --color-bg: #ffffa4;
+  --wt-card: 400px;
+  --wt-img-1: 40px;
+  --wt-img-2: 60px;
+  --wt-btn: 80px;
+  --wt-text: 80%;
+  --wt-text-icons: 20%;
+  --wt-search: 100%;
+
+  --color-bg: #f8bcbc;
+  --color-1: #f38ba2;
+  --color-2: #a36180;
+  --color-3: #6c4165;
+  --color-4: #473452;
+  --color-5: #1a141e;
   --color-logo: #ffbf78;
   --color-white: white;
-  --color-accent-primary: #ff7cf3;
-  --color-accent-secondary: #f8c6ed;
 
-  --fs-logo-primary: 80px;
+  --fs-logo-1: 80px;
+  --fs-logo-2: 40px;
+  --fs-1: 24px;
+  --fs-2: 18px;
 
-  --margin-0: 0;
-  --padding-0: 0;
-  --padding-secondary: 10px;
-  --padding-tb: 20px;
-  --padding-lr: 60px;
+  --m-0: 0;
+  --m-1: 10px;
+  --m-2: 20px;
+  --m-3: 60px;
 
-  --br-40: 40px;
+  --p-0: 0;
+  --p-1: 10px;
+  --p-2: 20px;
+  --p-3: 60px;
 
+  --br: 40px;
   --gap: 10px;
 }

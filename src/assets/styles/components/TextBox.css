@@ -6,6 +6,7 @@
   justify-content: space-between;
   height: var(--ht-text);
   margin: var(--m-2) var(--m-1);
+  gap: var(--gap);
 }
 
 .text-box-input-container {

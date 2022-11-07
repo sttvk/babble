@@ -78,3 +78,10 @@
   font-size: var(--fs-1);
   overflow: hidden;
 }
+
+.AuthCard-form-container > p > a {
+  color: var(--color-1);
+  font-size: var(--fs-1);
+  text-decoration: none;
+  overflow: hidden;
+}

@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: var(--p-1) var(--p-2);
+  padding: var(--p-1);
   gap: var(--gap);
   color: white;
   cursor: pointer;
@@ -58,7 +58,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .user-chat-info {
+  .user-chat > img {
     display: none;
   }
 }

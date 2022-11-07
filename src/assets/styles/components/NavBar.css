@@ -60,8 +60,4 @@
   .nav-bar-user > span {
     display: none;
   }
-
-  .nav-bar-user > button {
-    font-size: var(--fs-1);
-  }
 }

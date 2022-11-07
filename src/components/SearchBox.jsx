@@ -14,10 +14,11 @@ import { db } from "../firebase";
 import { AuthContext } from "../contexts/AuthContext";
 import "../assets/styles/components/SearchBox.css";
 
-function SearchBox() {
+const SearchBox = () => {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState(null);
   const [err, setErr] = useState(false);
+
   const { currentUser } = useContext(AuthContext);
 
   const handleSearch = async () => {
@@ -49,11 +50,12 @@ function SearchBox() {
 
     try {
       const res = await getDoc(doc(db, "chats", combinedId));
+
       if (!res.exists()) {
-        // Create a chat in chats collection
+        //create a chat in chats collection
         await setDoc(doc(db, "chats", combinedId), { messages: [] });
 
-        // Create user chats
+        //create user chats
         await updateDoc(doc(db, "userChats", currentUser.uid), {
           [combinedId + ".userInfo"]: {
             uid: user.uid,
@@ -72,9 +74,7 @@ function SearchBox() {
           [combinedId + ".date"]: serverTimestamp(),
         });
       }
-    } catch (err) {
-      setErr(true);
-    }
+    } catch (err) {}
 
     setUser(null);
     setUsername("");
@@ -102,6 +102,6 @@ function SearchBox() {
       )}
     </div>
   );
-}
+};
 
 export default SearchBox;

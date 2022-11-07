@@ -25,9 +25,10 @@
 }
 
 .message-content > p {
-  background-color: var(--color-2);
+  font-size: var(--fs-text);
   padding: var(--p-1) var(--p-2);
   border-radius: 0 var(--br) var(--br) var(--br);
+  background-color: var(--color-2);
 }
 
 .owner {
@@ -35,7 +36,8 @@
 }
 
 .owner > .message-content > p {
-  background-color: var(--color-3);
+  font-size: var(--fs-text);
   color: white;
   border-radius: var(--br) 0 var(--br) var(--br);
+  background-color: var(--color-3);
 }

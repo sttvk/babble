@@ -3,7 +3,7 @@ import "../assets/styles/pages/Home.css";
 import SideBar from "../components/SideBar";
 import ChatWindow from "../components/ChatWindow";
 
-function Home() {
+const Home = () => {
   return (
     <div className="home">
       <div className="home-container">
@@ -12,6 +12,6 @@ function Home() {
       </div>
     </div>
   );
-}
+};
 
 export default Home;

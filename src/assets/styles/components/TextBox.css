@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   height: var(--ht-100-per);
-  width: 85%;
+  width: 90%;
   border-radius: var(--br);
   background-color: var(--color-white);
 }
@@ -37,17 +37,17 @@
   gap: var(--gap);
 }
 
-.text-box-btn-container > label {
+/* .text-box-btn-container > label {
   display: flex;
   align-items: center;
-}
+} */
 
-.text-box-btn-container > label > img {
+/* .text-box-btn-container > label > img {
   height: var(--ht-img-2);
   width: var(--wt-img-2);
   border-radius: var(--br);
   cursor: pointer;
-}
+} */
 
 .text-box-btn-container > button {
   height: var(--ht-100-per);

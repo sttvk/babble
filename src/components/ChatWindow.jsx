@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { ChatContext } from "../contexts/ChatContext";
+import "../assets/styles/components/ChatWindow.css";
 import Messages from "./Messages";
 import TextBox from "./TextBox";
-import "../assets/styles/components/ChatWindow.css";
 
-function ChatWindow() {
+const ChatWindow = () => {
   const { data } = useContext(ChatContext);
 
   return (
@@ -16,6 +16,6 @@ function ChatWindow() {
       <TextBox />
     </div>
   );
-}
+};
 
 export default ChatWindow;

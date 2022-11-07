@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "../assets/styles/pages/AuthCard.css";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase";
 import { useNavigate, Link } from "react-router-dom";
+import { auth } from "../firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import "../assets/styles/pages/AuthCard.css";
 
-function LogIn() {
+const LogIn = () => {
   const [err, setErr] = useState(false);
   const navigate = useNavigate();
 
@@ -37,6 +37,6 @@ function LogIn() {
       </div>
     </div>
   );
-}
+};
 
 export default LogIn;

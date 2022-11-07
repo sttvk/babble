@@ -1,6 +1,4 @@
 import React, { useState, useContext } from "react";
-import { AuthContext } from "../contexts/AuthContext";
-import { ChatContext } from "../contexts/ChatContext";
 import {
   arrayUnion,
   doc,
@@ -8,11 +6,13 @@ import {
   Timestamp,
   updateDoc,
 } from "firebase/firestore";
-import { db, storage } from "../firebase";
 import { v4 as uuid } from "uuid";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
-import AddFile from "../assets/images/add-file.png";
+import { db, storage } from "../firebase";
+import { AuthContext } from "../contexts/AuthContext";
+import { ChatContext } from "../contexts/ChatContext";
 import "../assets/styles/components/TextBox.css";
+// import AddFile from "../assets/images/add-file.png";
 
 const TextBox = () => {
   const [text, setText] = useState("");
@@ -24,7 +24,9 @@ const TextBox = () => {
   const handleSend = async () => {
     if (img) {
       const storageRef = ref(storage, uuid());
+
       const uploadTask = uploadBytesResumable(storageRef, img);
+
       uploadTask.on(
         (error) => {
           //TODO:Handle Error
@@ -83,9 +85,9 @@ const TextBox = () => {
         />
       </div>
       <div className="text-box-btn-container">
-        <label htmlFor="file">
+        {/* <label htmlFor="file">
           <img src={AddFile} alt="" />
-        </label>
+        </label> */}
         <button onClick={handleSend}>Send</button>
       </div>
     </div>

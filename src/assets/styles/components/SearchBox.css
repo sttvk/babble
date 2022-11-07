@@ -29,7 +29,7 @@
 .user-chat {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding: var(--p-1);
   gap: var(--gap);
   color: white;

@@ -1,17 +1,19 @@
 import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
+import { auth, storage, db } from "../firebase";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import "../assets/styles/pages/AuthCard.css";
 import addUser from "../assets/images/add-user.png";
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { auth, storage, db } from "../firebase";
-import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { doc, setDoc } from "firebase/firestore";
-import { useNavigate, Link } from "react-router-dom";
 
-function SignUp() {
+const SignUp = () => {
   const [err, setErr] = useState(false);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
     const displayName = e.target[0].value;
     const email = e.target[1].value;
@@ -20,20 +22,19 @@ function SignUp() {
 
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
-      const storageRef = ref(storage, displayName);
-      const uploadTask = uploadBytesResumable(storageRef, file);
+      const date = new Date().getTime();
+      const storageRef = ref(storage, `${displayName + date}`);
 
-      uploadTask.on(
-        (error) => {
-          setErr(true);
-        },
-        () => {
-          getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
+      await uploadBytesResumable(storageRef, file).then(() => {
+        getDownloadURL(storageRef).then(async (downloadURL) => {
+          try {
+            //Update profile
             await updateProfile(res.user, {
               displayName,
               photoURL: downloadURL,
             });
 
+            //Create user on firestore
             await setDoc(doc(db, "users", res.user.uid), {
               uid: res.user.uid,
               displayName,
@@ -41,13 +42,19 @@ function SignUp() {
               photoURL: downloadURL,
             });
 
+            //Create empty user chats on firestore
             await setDoc(doc(db, "userChats", res.user.uid), {});
             navigate("/");
-          });
-        }
-      );
+          } catch (err) {
+            console.log(err);
+            setErr(true);
+            setLoading(false);
+          }
+        });
+      });
     } catch (err) {
       setErr(true);
+      setLoading(false);
     }
   };
 
@@ -64,7 +71,8 @@ function SignUp() {
             <img src={addUser} alt="" />
             <span>Add an avatar</span>
           </label>
-          <button>Sign up</button>
+          <button disabled={loading}>Sign up</button>
+          {loading && "Uploading and compressing the image please wait..."}
           {err && <span>Something went wrong</span>}
         </form>
         <p>
@@ -73,6 +81,6 @@ function SignUp() {
       </div>
     </div>
   );
-}
+};
 
 export default SignUp;

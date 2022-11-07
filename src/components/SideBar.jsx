@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 import SearchBox from "./SearchBox";
 import Chats from "./Chats";
 
-function SideBar() {
+const SideBar = () => {
   return (
     <div className="side-bar">
       <NavBar />
@@ -12,6 +12,6 @@ function SideBar() {
       <Chats />
     </div>
   );
-}
+};
 
 export default SideBar;

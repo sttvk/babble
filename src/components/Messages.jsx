@@ -2,10 +2,10 @@ import React, { useState, useContext, useEffect } from "react";
 import { ChatContext } from "../contexts/ChatContext";
 import { doc, onSnapshot } from "firebase/firestore";
 import { db } from "../firebase";
-import Message from "./Message";
 import "../assets/styles/components/Messages.css";
+import Message from "./Message";
 
-function Messages() {
+const Messages = () => {
   const [messages, setMessages] = useState([]);
   const { data } = useContext(ChatContext);
 
@@ -26,6 +26,6 @@ function Messages() {
       ))}
     </div>
   );
-}
+};
 
 export default Messages;

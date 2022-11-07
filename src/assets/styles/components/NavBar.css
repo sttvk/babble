@@ -45,3 +45,13 @@
   color: var(--color-white);
   background-color: var(--color-5);
 }
+
+@media only screen and (max-height: 600px) {
+  .AuthCard-logo {
+    display: none;
+  }
+
+  .AuthCard-form-container {
+    height: 480px;
+  }
+}

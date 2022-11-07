@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, storage, db } from "../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function SignUp() {
   const [err, setErr] = useState(false);
@@ -67,7 +67,9 @@ function SignUp() {
           <button>Sign up</button>
           {err && <span>Something went wrong</span>}
         </form>
-        <p>Already have an account? Log in</p>
+        <p>
+          Already have an account? <Link to="/login">Log in</Link>
+        </p>
       </div>
     </div>
   );

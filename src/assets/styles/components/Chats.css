@@ -3,7 +3,7 @@
 .chat-container {
   display: flex;
   align-items: center;
-  padding: var(--p-1) var(--p-2);
+  padding: var(--p-1);
   gap: var(--gap);
   color: var(--color-white);
   cursor: pointer;

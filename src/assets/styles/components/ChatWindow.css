@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: left;
   height: var(--ht-menu);
-  padding: var(--p-1) var(--p-2);
+  padding: var(--p-1);
   font-size: var(--fs-1);
   font-weight: bold;
   gap: var(--gap);

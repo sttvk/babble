@@ -1,7 +1,7 @@
 @import url(../Constants.css);
 
 .chat-window {
-  flex: 2;
+  flex: 3;
 }
 
 .chat-window-container {
@@ -15,10 +15,4 @@
   gap: var(--gap);
   color: var(--color-white);
   background-color: var(--color-4);
-}
-
-@media only screen and (max-width: 700px) {
-  .chat-window {
-    flex: 0;
-  }
 }

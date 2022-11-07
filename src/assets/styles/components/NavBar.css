@@ -46,8 +46,22 @@
   background-color: var(--color-5);
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
   .nav-bar-logo {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-bar-user > img {
+    display: none;
+  }
+
+  .nav-bar-user > span {
+    display: none;
+  }
+
+  .nav-bar-user > button {
+    font-size: var(--fs-2);
   }
 }

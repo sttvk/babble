@@ -33,3 +33,9 @@
 .chats :hover {
   background-color: var(--color-3);
 }
+
+@media only screen and (max-width: 600px) {
+  .chat-info {
+    display: none;
+  }
+}

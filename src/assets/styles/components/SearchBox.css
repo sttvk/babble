@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   margin: var(--m-1) var(--m-2);
-  padding: var(--p-1);
   overflow: hidden;
   border-radius: var(--br);
   background-color: var(--color-3);

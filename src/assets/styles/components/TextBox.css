@@ -19,22 +19,20 @@
 }
 
 .text-box-input-container > input {
-  height: var(--fs-1);
+  height: var(--ht-text);
   width: var(--wt-100-per);
   padding: var(--p-1) var(--p-2);
   outline: none;
   color: var(--color-3);
   border: none;
   border-radius: var(--br);
-  font-size: var(--fs-1);
+  font-size: var(--fs-text);
 }
 
 .text-box-btn-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   height: var(--ht-100-per);
-  gap: var(--gap);
 }
 
 /* .text-box-btn-container > label {

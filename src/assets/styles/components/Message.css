@@ -27,6 +27,7 @@
 .message-content > p {
   font-size: var(--fs-text);
   padding: var(--p-1) var(--p-2);
+  color: white;
   border-radius: 0 var(--br) var(--br) var(--br);
   background-color: var(--color-2);
 }

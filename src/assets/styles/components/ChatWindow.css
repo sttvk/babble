@@ -23,3 +23,9 @@
   border-radius: var(--br);
   object-fit: cover;
 }
+
+@media only screen and (max-width: 600px) {
+  .chat-window {
+    flex: 0;
+  }
+}

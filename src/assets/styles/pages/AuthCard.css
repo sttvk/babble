@@ -14,6 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: var(--ht-card);
   width: var(--wt-card);
   border-radius: var(--br);
   padding: var(--p-2);
@@ -70,4 +71,14 @@
 .AuthCard-form-container > p {
   color: var(--color-1);
   font-size: var(--fs-1);
+}
+
+@media only screen and (max-height: 600px) {
+  .AuthCard-logo {
+    display: none;
+  }
+
+  .AuthCard-form-container {
+    height: 480px;
+  }
 }

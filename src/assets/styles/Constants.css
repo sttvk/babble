@@ -10,6 +10,7 @@
 
   --ht-vh: 100vh;
   --ht-100-per: 100%;
+  --ht-card: 480px;
   --ht-menu: 80px;
   --ht-text: 40px;
   --ht-img-1: 60px;
@@ -17,7 +18,7 @@
   --ht-messages: calc(100% - 160px);
 
   --wt-100-per: 100%;
-  --wt-card: 400px;
+  --wt-card: 360px;
   --wt-form-per: 80%;
   --wt-img-1: 60px;
   --wt-img-2: 40px;

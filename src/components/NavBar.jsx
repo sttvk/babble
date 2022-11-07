@@ -1,4 +1,6 @@
 import React from "react";
+import { signOut } from "firebase/auth";
+import { auth } from "../firebase";
 import "../assets/styles/components/NavBar.css";
 
 function NavBar() {
@@ -11,7 +13,7 @@ function NavBar() {
           alt="Profile"
         />
         <span>John</span>
-        <button>Log out</button>
+        <button onClick={() => signOut(auth)}>Log out</button>
       </div>
     </div>
   );

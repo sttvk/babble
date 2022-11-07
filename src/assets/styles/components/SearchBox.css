@@ -5,6 +5,7 @@
   align-items: center;
   height: var(--ht-text);
   margin: var(--m-1) var(--m-2);
+  overflow: hidden;
   border-radius: var(--br);
   background-color: var(--color-3);
 }

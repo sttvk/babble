@@ -1,17 +1,16 @@
-import React from "react";
-import "../assets/styles/components/ChatWindow.css";
+import React, { useContext } from "react";
+import { ChatContext } from "../contexts/ChatContext";
 import Messages from "./Messages";
 import TextBox from "./TextBox";
+import "../assets/styles/components/ChatWindow.css";
 
 function ChatWindow() {
+  const { data } = useContext(ChatContext);
+
   return (
     <div className="chat-window">
       <div className="chat-window-container">
-        <img
-          src="https://images.pexels.com/photos/12712925/pexels-photo-12712925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt="Profile"
-        />
-        <span>John</span>
+        <span>{data.user?.displayName}</span>
       </div>
       <Messages />
       <TextBox />

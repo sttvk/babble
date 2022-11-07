@@ -17,13 +17,6 @@
   background-color: var(--color-4);
 }
 
-.chat-window-container > img {
-  height: var(--ht-img-2);
-  width: var(--ht-img-2);
-  border-radius: var(--br);
-  object-fit: cover;
-}
-
 @media only screen and (max-width: 700px) {
   .chat-window {
     flex: 0;

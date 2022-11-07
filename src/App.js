@@ -4,7 +4,7 @@ import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
-import { AuthContext } from "./context/AuthContext";
+import { AuthContext } from "./contexts/AuthContext";
 
 function App() {
   const { currentUser } = useContext(AuthContext);

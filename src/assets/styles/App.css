@@ -17,3 +17,7 @@ button:focus {
 ::placeholder {
   color: lightgray;
 }
+
+img {
+  overflow: hidden;
+}

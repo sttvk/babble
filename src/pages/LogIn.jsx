@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "../assets/styles/pages/AuthCard.css";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth, storage, db } from "../firebase";
-import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { doc, setDoc } from "firebase/firestore";
+import { auth } from "../firebase";
 import { useNavigate, Link } from "react-router-dom";
 
 function LogIn() {

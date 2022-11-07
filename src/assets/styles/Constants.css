@@ -10,7 +10,8 @@
 
   --ht-vh: 100vh;
   --ht-100-per: 100%;
-  --ht-card: 480px;
+  --ht-page-min: 500px;
+  --ht-card-min: 480px;
   --ht-menu: 80px;
   --ht-text: 40px;
   --ht-img-1: 60px;

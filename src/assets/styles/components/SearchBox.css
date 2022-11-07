@@ -2,9 +2,9 @@
 
 .search-box {
   display: flex;
-  align-items: center;
-  height: var(--ht-text);
+  flex-direction: column;
   margin: var(--m-1) var(--m-2);
+  padding: var(--p-1);
   overflow: hidden;
   border-radius: var(--br);
   background-color: var(--color-3);
@@ -24,4 +24,36 @@
   color: var(--color-white);
   border-radius: var(--br);
   background-color: transparent;
+}
+
+.user-chat {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: var(--p-1);
+  gap: var(--gap);
+  color: white;
+  cursor: pointer;
+}
+
+.user-chat:hover {
+  background-color: var(--color-4);
+  border-radius: var(--br);
+}
+
+.user-chat > img {
+  width: var(--wt-img-2);
+  height: var(--ht-img-2);
+  border-radius: var(--br);
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.user-chat-info > span {
+  font-size: var(--fs-1);
+}
+
+.user-chat-info > p {
+  font-size: var(--fs-1);
+  color: lightgray;
 }
